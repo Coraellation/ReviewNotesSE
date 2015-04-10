@@ -27,6 +27,15 @@ class Bird{
 
 - `virtual` methods can be overidden in inheriting classes
 - `pure virtual` methods are required to be implemented in inheriting class
+
+```cpp
+//Virtual, needs implementation in base class
+virtual ~HashTable();
+
+//Pure Virtual, class containing this is abstract (cannot create object of this class)
+virtual int hash (string key) const = 0;
+```
+
 #### Method definitions
 
 ```cpp
