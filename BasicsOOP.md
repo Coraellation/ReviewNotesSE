@@ -11,7 +11,26 @@ Basics of Object-Oriented Programming
 - Cannot have instances of this
 - Defines common shape of descendent classes
 
-#### Class Declarations
+
+###### Procedural Programming
+- **Procedures plus variables**
+- Variables created in main program, passed as parameters to procedures
+- Struct defines type of variable + var subparts
+- Manipulate instances of struct types
+
+###### Object-based Programming
+- **Classes (fields + methods) + instances**
+- Classes/structs have var sub-parts and procedures (methods of the class) that act on their sub-parts (fields/member vars)
+- Each object is na instance of a class/struct
+
+###### Object-oriented Programming
+- **Classes/instances + inheritance/polymorphism + generics**
+- Inhertiance: Classes can extend other classes
+- Abstract Classes: Some classes can never have instances
+- Polymorphism: Can treat instances of related classes in uniform manner
+- Generics: Can parameterize some classes by a type
+    - ie. vector<T> where T may be a string/int/etc.
+
 ```cpp
 class Bird{
     public:
@@ -99,10 +118,13 @@ int main(int argc, char* argv[]){
 2. Class/```static``` Variable: One per class
 
 ```Member Method```:
-1. Instance Method: 
+1. Instance Method:
+
     - Operates on ```this``` object
     - Can call other instance methodsdirectly without going through another object
+    
 2. Class/```static``` Method: 
+
     - Cannot call instance methods directly
     - Must go through another object
     - Can call statics methods, touch static class variable directly

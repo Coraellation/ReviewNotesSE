@@ -1,8 +1,8 @@
 Binary Search Trees
 ======
 
-```Tree```: Graph with node called a root with no parent; all other parents have one parent
-```Binary Tree```: Each node can have at most two children
+- ```Tree```: Graph with node called a root with no parent; all other parents have one parent
+- ```Binary Tree```: Each node can have at most two children
 
 ### BST vs. BT
 
@@ -71,6 +71,8 @@ Operation | Complexity | Why
 ----------|------------|-----
 Print     | O(N)       |All nodes are visited
 Lookup    | Worst Case: k (present), k+1 (not present)| Gone through entire height of tree
+
+
 
 
 
